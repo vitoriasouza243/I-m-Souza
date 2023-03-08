@@ -57,6 +57,7 @@ footer{
     height: 20vh;
 }
 
+
 .container{
     display: flex;
     justify-content: center;
@@ -65,9 +66,6 @@ footer{
     max-width: 800px;
     height: 100%;
     background-color:#000;
-    opacity: 0.8;
-    color: #fff;
-    opacity: 0;
     transform: translateX(-50px);
     animation: ascender-esquerda-direita 1s ease-in-out forwards;
 }
@@ -78,16 +76,22 @@ footer{
       transform: translateX(-50px); 
     }
     100% {
-      opacity: 1;
+      opacity: 0.7;
       transform: translateX(0);
     }
   }
 
 .text{
+    width: 400px;
+    height: auto;
+    top: 350px;
+    left: 350px;
     align-items: center;
-    padding-left: 350px;
-    padding-right: 50px;
     text-align: justify;
+    color: #fff;
+    position: absolute;
+    animation: ascender-esquerda-direita-2 1s ease-in-out forwards;
+    
 }
 
 .eu img{
@@ -97,13 +101,22 @@ footer{
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
-    top: 250px;
+    top: 320px;
     padding-left: 20px;
     position: absolute;
-    opacity: 0;
     transform: translateX(-50px);
-    animation: ascender-esquerda-direita 1s ease-in-out forwards;
+    animation: ascender-esquerda-direita-2 1s ease-in-out forwards;
+
 }
+@keyframes ascender-esquerda-direita-2 {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px); 
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 
 .redes{
     padding-top: 20px;
